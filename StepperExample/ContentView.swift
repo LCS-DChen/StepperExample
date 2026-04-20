@@ -33,7 +33,7 @@ struct ContentView: View {
             
             HStack(alignment: .top) {
  
-                Text("\(base)")
+                Text(base < 0 ? "(\(base))" : "\(base)")
                     .font(.system(size: 96))
  
                 Text("2")
@@ -42,7 +42,6 @@ struct ContentView: View {
                 Text("=")
                     .font(.system(size: 96))
  
-                Text("25")
                 Text("\(squared)")
                     .font(.system(size: 96))
             }
